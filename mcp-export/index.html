@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MCP Export - Automovilismo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;900&family=Inter:wght@400;600;700&family=Manrope:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Manrope', sans-serif;
+      background: #0c0a09;
+      color: #f5f5f4;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 60px 20px;
+    }
+    .header {
+      text-align: center;
+      margin-bottom: 48px;
+    }
+    .header .tag {
+      color: #d4af37;
+      font-weight: 800;
+      font-size: 13px;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+    }
+    .header h1 {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 900;
+      font-size: 56px;
+      letter-spacing: -1px;
+      text-transform: uppercase;
+      margin-bottom: 12px;
+    }
+    .header p {
+      color: #a6a09b;
+      font-size: 16px;
+      max-width: 600px;
+      line-height: 1.5;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 24px;
+      max-width: 1200px;
+      width: 100%;
+    }
+    .card {
+      background: #171513;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 12px;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      transition: transform 0.2s, border-color 0.2s, box-shadow 0.2s;
+      text-decoration: none;
+      color: inherit;
+    }
+    .card:hover {
+      transform: translateY(-4px);
+      border-color: #d4af37;
+      box-shadow: 0 12px 30px rgba(0,0,0,0.5);
+    }
+    .card-badge {
+      font-size: 11px;
+      font-weight: 800;
+      padding: 6px 12px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      align-self: flex-start;
+      border-radius: 4px;
+      margin: 16px 16px 0;
+    }
+    .badge-desktop { background: rgba(212, 175, 55, 0.15); color: #d4af37; border: 1px solid #715f24; }
+    .badge-mobile { background: rgba(239, 68, 68, 0.15); color: #f87171; border: 1px solid #991b1b; }
+    .card-body {
+      padding: 16px 20px 24px;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+    .card-title {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 700;
+      font-size: 28px;
+      text-transform: uppercase;
+    }
+    .card-node {
+      font-family: monospace;
+      font-size: 12px;
+      color: #79716b;
+    }
+    .card-desc {
+      font-size: 14px;
+      color: #a6a09b;
+      line-height: 1.5;
+      margin-top: 4px;
+    }
+    .card-btn {
+      margin-top: 16px;
+      align-self: flex-start;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      color: #d4af37;
+      font-weight: 700;
+      font-size: 13px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+    .footer {
+      margin-top: 60px;
+      color: #57534d;
+      font-size: 13px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <p class="tag">Figma MCP Export</p>
+    <h1>Frames Exportados</h1>
+    <p>Colección de páginas HTML y hojas de estilo CSS exportadas con máxima fidelidad visual desde Figma.</p>
+  </div>
+
+  <div class="grid">
+    <!-- Rally Desktop -->
+    <a href="rally.html" class="card">
+      <span class="card-badge badge-desktop">Versión Portátil</span>
+      <div class="card-body">
+        <h2 class="card-title">Leyendas del Rally</h2>
+        <span class="card-node">Node ID: 75:627</span>
+        <p class="card-desc">Portada con héroe dinámico de rally, sección de coches clásicos (BMW M3, Honda Civic, Subaru) y pilotos icónicos (Mouton, Sainz, McRae).</p>
+        <span class="card-btn">Ver Frame &rarr;</span>
+      </div>
+    </a>
+
+    <!-- F1 Desktop -->
+    <a href="f1.html" class="card">
+      <span class="card-badge badge-desktop">Versión Portátil</span>
+      <div class="card-body">
+        <h2 class="card-title">Leyendas de la F1</h2>
+        <span class="card-node">Node ID: 75:626</span>
+        <p class="card-desc">Portada de F1 con Senna, sección de pilotos con acentos en rojo carrera (Senna, Lauda, Schumacher) y monoplazas legendarios (R26, MP4/4, RB7).</p>
+        <span class="card-btn">Ver Frame &rarr;</span>
+      </div>
+    </a>
+
+    <!-- Contacto Desktop -->
+    <a href="contacto.html" class="card">
+      <span class="card-badge badge-desktop">Versión Portátil</span>
+      <div class="card-body">
+        <h2 class="card-title">Contacto (Portátil)</h2>
+        <span class="card-node">Node ID: 75:236</span>
+        <p class="card-desc">Formulario elegante con degradado radial, borde dorado oscuro, campos de correo y nombre, checkbox de novedades e información de seguridad.</p>
+        <span class="card-btn">Ver Frame &rarr;</span>
+      </div>
+    </a>
+
+    <!-- Contacto Mobile -->
+    <a href="mobile-contacto.html" class="card">
+      <span class="card-badge badge-mobile">Versión Móvil</span>
+      <div class="card-body">
+        <h2 class="card-title">Contacto (Móvil)</h2>
+        <span class="card-node">Node ID: 98:150</span>
+        <p class="card-desc">Diseño adaptado a pantalla móvil de 428px con barra de navegación superior móvil compacta con iconos y pie de página con enlace a GitHub.</p>
+        <span class="card-btn">Ver Frame &rarr;</span>
+      </div>
+    </a>
+  </div>
+
+  <div class="footer">
+    <p>MCP_motorsport &bull; DAW Alejandro Polo &bull; 2026</p>
+  </div>
+</body>
+</html>
